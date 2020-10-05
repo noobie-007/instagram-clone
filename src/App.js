@@ -173,6 +173,7 @@ function App() {
           </div>  
         )}
       </div>
+      {/* to show all posts on home page.. */}
       <div className="app-post">
         {
           posts.map(({id, post}) => (
@@ -181,6 +182,7 @@ function App() {
         }
       </div>
       
+      {/* will check if your is logged in then show upload button... */}
       {user?.displayName ? (
     <ImageUpload username={user.displayName} />
       ) : (
